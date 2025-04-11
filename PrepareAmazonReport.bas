@@ -1,3 +1,5 @@
+Option Explicit
+
 ' Module: PrepareAmazonReport
 ' Author: Denis Krašna
 ' Description: Calculates profit for an Amazon product using input price, cost, and commission.
@@ -21,7 +23,7 @@ End Sub
 
 Sub InitializeSheet()
 
-    Set wb = Workbooks("porocilo.xlsm")
+    Set wb = ThisWorkbook
 
     sheetName = "AmazonReport"
     exists = False
@@ -34,6 +36,7 @@ Sub InitializeSheet()
     Next ws
 
     If exists Then
+        Set wsNew = wb.Worksheets(sheetName)
         wb.Worksheets(sheetName).Range("A1:G10").ClearContents
         Debug.Print "Existing sheet [" & ws.Name & "] cleared."
     Else
