@@ -1,3 +1,4 @@
+
 # 📦 VBA Amazon Profit Report
 
 A simple Excel VBA macro to calculate Amazon product profit based on user input:
@@ -25,13 +26,39 @@ The macro performs 4 main steps:
 
 ---
 
-## 💻 Technologies Used
+## 🧑‍💻 Technologies Used
 
 - **Excel VBA** (Visual Basic for Applications)
-- `.xlsm` macro-enabled workbooks
+- `.xlsm` macro-enabled workbook
 - `InputBox`, `MsgBox`, and range operations
 
 ---
 
 ## 📁 File Structure
 
+```
+📁 code/
+    └─ PrepareAmazonReport.bas     ' VBA source code
+📁 sample/
+    └─ report.xlsm                 ' Sample workbook to test the macro
+```
+
+---
+
+## 🧠 About this project
+
+This is part of my personal IT learning journey in 2025.  
+I'm transitioning from mechanical engineering to data automation and development using tools like:
+
+- VBA
+- PowerShell
+- SQL
+- Python
+
+---
+
+## 👨‍💻 Author
+
+**Denis Krašna**  
+📍 Bled, Slovenia 🇸🇮  
+📫 denis.krasna@gmail.com
